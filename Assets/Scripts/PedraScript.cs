@@ -6,7 +6,8 @@ public class PedraScript : MonoBehaviour
 {
     //Cria variavel do tipo SpriteRenderer
     SpriteRenderer m_SpriteRenderer;
-
+    
+    public bool clique;
     int count;
     int restoDivisao;
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class PedraScript : MonoBehaviour
 
     //Pega o clique na caixa 
     void OnMouseDown() {
-        Debug.Log("Clique na caixa");
+        Debug.Log("Clique na pedra");
         count ++;
         restoDivisao = count % 2;
         
@@ -35,7 +36,7 @@ public class PedraScript : MonoBehaviour
         }
         else
         {
-            m_SpriteRenderer.color = Color.red;
+            m_SpriteRenderer.color = Color.white;
         }
         
     }
