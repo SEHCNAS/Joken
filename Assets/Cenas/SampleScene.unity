@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 564229051}
   - component: {fileID: 564229050}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: Tilemap_Caveira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 1349616585}
   - component: {fileID: 1349616584}
   m_Layer: 0
-  m_Name: Base
+  m_Name: Chao_Terra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -758,7 +758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f03254242414545b78e0908ed39c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clique: 0
 --- !u!1 &1450595954
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +769,7 @@ GameObject:
   - component: {fileID: 1450595956}
   - component: {fileID: 1450595955}
   m_Layer: 0
-  m_Name: BG
+  m_Name: Fundo_Fixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,7 +852,7 @@ GameObject:
   - component: {fileID: 1590087883}
   - component: {fileID: 1590087882}
   m_Layer: 0
-  m_Name: Base
+  m_Name: Tilemap_Chao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,7 +1885,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca84f97ac91c48b468f5a1cd9d435a6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1906,7 +1905,7 @@ Transform:
   m_GameObject: {fileID: 1645857305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: -3, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1940,14 +1939,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &1680826948
 GameObject:
@@ -1960,7 +1959,7 @@ GameObject:
   - component: {fileID: 1680826950}
   - component: {fileID: 1680826949}
   m_Layer: 0
-  m_Name: Frente
+  m_Name: Chao_Caveiras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

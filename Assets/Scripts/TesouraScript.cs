@@ -2,49 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TesouraScript : MonoBehaviour
-{
+public class TesouraScript : MonoBehaviour{
     //Cria variavel do tipo SpriteRenderer
     SpriteRenderer m_SpriteRenderer;
+    public static bool IsTesouraSelecionado;
 
-    //public bool clique;
-    int count;
-    int restoDivisao;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         //Pega o componente SpriteRenderer do objeto
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        
+        IsTesouraSelecionado = false;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
     }
 
     //Pega o clique na caixa 
-    void OnMouseDown() {
+    void OnMouseDown(){
         Debug.Log("Clique na tesoura");
-        count ++;
-        restoDivisao = count % 2;
-        if(PapelScript.IsPapelSelecionado == false)
-        {
+        if(!PapelScript.IsPapelSelecionado && !PedraScript.IsPedraSelcionado){
+            if(!IsTesouraSelecionado){
+                m_SpriteRenderer.color = Color.blue;
+                IsTesouraSelecionado = true;
+            }
+            else{
+                m_SpriteRenderer.color = Color.white;
+                IsTesouraSelecionado = false;
+            }
+        }
+         /*
+        if(PapelScript.IsPapelSelecionado == false){
             Debug.Log("Falso");
         }
-        else
-        {
+        else{
             Debug.Log("VERDADEIRO");
-        }
-        if(restoDivisao == 1)
-        {
-            m_SpriteRenderer.color = Color.blue;
-        }
-        else
-        {
-            m_SpriteRenderer.color = Color.white;
-        }
-        
+        }*/
     }
 }
